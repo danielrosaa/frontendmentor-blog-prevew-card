@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <style type="text/tailwindcss">
+      @layer base {
+        @font-face {
+          font-family: Figtree;
+          font-weight: 500;
+          src: url("./assets/fonts/static/Figtree-Medium.ttf") format("ttf");
+        }
+        @font-face {
+          font-family: Figtree;
+          font-weight: 800;
+          src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("ttf");
+        }
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-yellow-500 h-screen w-screen grid place-content-center font-figtree font-medium p-6"
+  >
+    <section
+      class="transition-all grid gap-6 w-full max-w-96 h-fit p-6 rounded-[20px] bg-white border-[1px] border-gray-950 shadow-[8px_8px_0_0] shadow-gray-950 group hover:shadow-[16px_16px_0_0]"
+    >
+      <!-- Alt attribute should be empty for decorative images so screen readers can ignore them -->
+      <img
+        alt=""
+        src="./assets/images/illustration-article.svg"
+        class="rounded-[10px] h-[200px] object-cover"
+      />
+      <div class="grid gap-3">
+        <div
+          class="px-3 py-1 sm:text-sm bg-yellow-500 rounded w-fit font-extrabold text-xs leading-normal tracking-normal"
+        >
+          Learning
+        </div>
+        <div class="text-xs sm:text-sm leading-normal tracking-normal">
+          Published 21 Dec 2023
+        </div>
+        <header
+          class="transition-all group-hover:text-yellow-500 text-xl sm:text-2xl font-extrabold leading-normal tracking-normal"
+        >
+          <!-- As this is a card that most likely will be alongside other cards, I chose to use h2 tag -->
+          <h2>HTML & CSS foundations</h2>
+        </header>
+        <div
+          class="text-sm sm:text-base font-medium leading-normal tracking-normal text-gray-500"
+        >
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Alt attribute should be empty for decorative images so screen readers can ignore them -->
+        <img src="./assets/images/image-avatar.webp" alt="" class="w-8 h-8" />
+        <div class="text-sm font-extrabold leading-normal tracking-normal">
+          Greg Hooper
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
